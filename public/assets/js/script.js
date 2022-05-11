@@ -51,12 +51,12 @@ const handleZookeeperFormSubmit = event => {
   event.preventDefault();
 
   const name = $zookeeperForm.querySelector('[name="zookeeper-name"]').value;
-  const age = $zookeeperForm.querySelector('[name="age"]').value;
+  const age = parseInt($zookeeperForm.querySelector('[name="age"]').value);
   const favoriteAnimal = $zookeeperForm.querySelector('[name="favorite-animal"]').value;
 
   const zookeeperObj = { name, age, favoriteAnimal };
   console.log(zookeeperObj);
-  fetch('api/zookeepers', {
+  fetch('/api/zookeepers', {
     method: 'POST',
     headers: {
       Accept: 'application/json',

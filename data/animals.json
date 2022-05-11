@@ -118,6 +118,15 @@
         "anxious"
       ],
       "id": "11"
+    },
+    {
+      "name": "Stew",
+      "species": "Lizard",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "12"
     }
   ]
 }
